@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strat - Get Cash for Your Home in 7 Days</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; }
+    
+    .hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white; padding: 80px 20px; text-align: center; }
+    .hero h1 { font-size: 3.5rem; margin-bottom: 20px; }
+    .hero p { font-size: 1.3rem; opacity: 0.9; margin-bottom: 40px; }
+    .hero .cta { background: #e94560; color: white; padding: 15px 40px; font-size: 1.2rem; border: none; border-radius: 50px; cursor: pointer; text-decoration: none; display: inline-block; }
+    .hero .cta:hover { background: #d63d56; transform: translateY(-2px); }
+    
+    .features { padding: 80px 20px; max-width: 1100px; margin: 0 auto; }
+    .features h2 { text-align: center; font-size: 2.5rem; margin-bottom: 50px; }
+    .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+    .feature { text-align: center; padding: 30px; border-radius: 15px; background: #f8f9fa; }
+    .feature-icon { font-size: 3rem; margin-bottom: 20px; }
+    .feature h3 { margin-bottom: 15px; font-size: 1.4rem; }
+    
+    .investors { background: #f8f9fa; padding: 80px 20px; text-align: center; }
+    .investors h2 { font-size: 2.5rem; margin-bottom: 20px; }
+    .investors p { font-size: 1.2rem; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto; }
+    .investors .pricing { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+    .pricing-card { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); min-width: 280px; }
+    .pricing-card.featured { border: 3px solid #e94560; transform: scale(1.05); }
+    .pricing-card h3 { font-size: 1.5rem; margin-bottom: 10px; }
+    .pricing-card .price { font-size: 3rem; font-weight: bold; color: #1a1a2e; margin: 20px 0; }
+    .pricing-card .price span { font-size: 1rem; font-weight: normal; }
+    .pricing-card ul { list-style: none; text-align: left; margin: 20px 0; }
+    .pricing-card li { padding: 8px 0; }
+    .pricing-card li::before { content: "✓"; color: #e94560; margin-right: 10px; }
+    .pricing-card button { background: #1a1a2e; color: white; padding: 12px 30px; border: none; border-radius: 8px; cursor: pointer; width: 100%; font-size: 1rem; }
+    .pricing-card.featured button { background: #e94560; }
+    
+    .form-section { padding: 80px 20px; max-width: 600px; margin: 0 auto; }
+    .form-section h2 { text-align: center; font-size: 2.5rem; margin-bottom: 40px; }
+    .form { background: #f8f9fa; padding: 40px; border-radius: 15px; }
+    .form-group { margin-bottom: 20px; }
+    .form-group label { display: block; margin-bottom: 8px; font-weight: 500; }
+    .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: #e94560; }
+    .form-group button { background: #e94560; color: white; padding: 15px; border: none; border-radius: 8px; cursor: pointer; width: 100%; font-size: 1.1rem; font-weight: 600; }
+    .form-group button:hover { background: #d63d56; }
+    
+    .footer { background: #1a1a2e; color: white; padding: 40px 20px; text-align: center; }
+    .footer p { opacity: 0.7; }
+    
+    .success { display: none; text-align: center; padding: 40px; }
+    .success h3 { color: #28a745; font-size: 2rem; margin-bottom: 20px; }
+    
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2.5rem; }
+      .hero p { font-size: 1.1rem; }
+      .pricing-card.featured { transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Get Cash for Your Home in 7 Days</h1>
+    <p>We connect motivated home sellers with investors ready to buy. No commissions, no hassle.</p>
+    <a href="#seller-form" class="cta">Get Your Free Offer</a>
+  </section>
+
+  <!-- How It Works -->
+  <section class="features">
+    <h2>How It Works</h2>
+    <div class="features-grid">
+      <div class="feature">
+        <div class="feature-icon">📋</div>
+        <h3>1. Submit Your Info</h3>
+        <p>Tell us about your property in under 2 minutes.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">📞</div>
+        <h3>2. We Call Within 24h</h3>
+        <p>Our team contacts you to learn more about your situation.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">💰</div>
+        <h3>3. Get a Cash Offer</h3>
+        <p>Connect with investors competing for your property.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- For Investors -->
+  <section class="investors" id="investors">
+    <h2>For Real Estate Investors</h2>
+    <p>Get exclusive access to motivated home sellers before they hit the market. Build your deals pipeline with qualified leads.</p>
+    <div class="pricing">
+      <div class="pricing-card">
+        <h3>Free Trial</h3>
+        <div class="price">$0<span>/week</span></div>
+        <ul>
+          <li>1 lead to try</li>
+          <li>Basic lead info</li>
+          <li>Email support</li>
+        </ul>
+        <button onclick="window.location.href='#investor-form'">Start Free</button>
+      </div>
+      <div class="pricing-card featured">
+        <h3>Pro</h3>
+        <div class="price">$99<span>/week</span></div>
+        <ul>
+          <li>5 qualified leads</li>
+          <li>Full contact info</li>
+          <li>Priority matching</li>
+          <li>Market reports</li>
+        </ul>
+        <button onclick="window.location.href='#investor-form'">Get Started</button>
+      </div>
+      <div class="pricing-card">
+        <h3>Power</h3>
+        <div class="price">$199<span>/week</span></div>
+        <ul>
+          <li>15 qualified leads</li>
+          <li>Full contact info</li>
+          <li>First access</li>
+          <li>Dedicated support</li>
+        </ul>
+        <button onclick="window.location.href='#investor-form'">Get Started</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seller Form -->
+  <section class="form-section" id="seller-form">
+    <h2>Get Your Free Offer</h2>
+    <form class="form" id="sellerForm">
+      <div class="form-group">
+        <label>Your Name *</label>
+        <input type="text" name="name" required placeholder="John Smith">
+      </div>
+      <div class="form-group">
+        <label>Phone Number *</label>
+        <input type="tel" name="phone" required placeholder="(555) 123-4567">
+      </div>
+      <div class="form-group">
+        <label>Email (optional)</label>
+        <input type="email" name="email" placeholder="you@email.com">
+      </div>
+      <div class="form-group">
+        <label>Property Address *</label>
+        <input type="text" name="address" required placeholder="123 Main St, City, State ZIP">
+      </div>
+      <div class="form-group">
+        <label>Property Type</label>
+        <select name="property_type">
+          <option value="single_family">Single Family Home</option>
+          <option value="condo">Condo</option>
+          <option value="townhouse">Townhouse</option>
+          <option value="multi_family">Multi-Family</option>
+          <option value="land">Land</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>When do you want to sell?</label>
+        <select name="timeframe">
+          <option value="flexible">Flexible</option>
+          <option value="asap">As soon as possible</option>
+          <option value="30_days">Within 30 days</option>
+          <option value="60_days">Within 60 days</option>
+          <option value="90_days">Within 90 days</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <button type="submit">Get My Free Offer</button>
+      </div>
+    </form>
+    <div class="success" id="sellerSuccess">
+      <h3>✓ Request Received!</h3>
+      <p>We'll call you within 24 hours. Check your phone!</p>
+    </div>
+  </section>
+
+  <!-- Investor Form -->
+  <section class="form-section" id="investor-form">
+    <h2>Investor Sign Up</h2>
+    <form class="form" id="investorForm">
+      <div class="form-group">
+        <label>Your Name *</label>
+        <input type="text" name="name" required placeholder="John Smith">
+      </div>
+      <div class="form-group">
+        <label>Email *</label>
+        <input type="email" name="email" required placeholder="you@company.com">
+      </div>
+      <div class="form-group">
+        <label>Company (optional)</label>
+        <input type="text" name="company" placeholder="Your Investment Firm">
+      </div>
+      <div class="form-group">
+        <label>Target Zip Codes</label>
+        <input type="text" name="target_zip_codes" placeholder="90210, 90211, 90212">
+      </div>
+      <div class="form-group">
+        <label>Investment Criteria</label>
+        <textarea name="investment_criteria" rows="3" placeholder="What kind of deals are you looking for?"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit">Sign Up for Free Lead</button>
+      </div>
+    </form>
+    <div class="success" id="investorSuccess">
+      <h3>✓ Welcome!</h3>
+      <p>Your free lead is being prepared. We'll email you shortly!</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 Strat. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const SUPABASE_URL = 'https://ihnsgfmyzccreyyjdvxu.supabase.co';
+    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlobnNnZm15emNjcmV5eWpkdnh1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzU4MDYwODQsImV4cCI6MjA5MTM4MjA4NH0.CIKOgAyz9PDXaqbdyy_KfT7NK7Q8HLuxBeFadXTIaPI';
+
+    // Helper to make requests
+    async function supabaseRequest(endpoint, method = 'POST', body = null) {
+      const options = {
+        method,
+        headers: {
+          'Content-Type': 'application/json',
+          'apikey': SUPABASE_ANON_KEY,
+          'Authorization': `Bearer ${SUPABASE_ANON_KEY}`
+        }
+      };
+      if (body) options.body = JSON.stringify(body);
+      const response = await fetch(`${SUPABASE_URL}/rest/v1/${endpoint}`, options);
+      return response.json();
+    }
+
+    // Handle seller form
+    document.getElementById('sellerForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const formData = new FormData(e.target);
+      const data = {
+        name: formData.get('name'),
+        phone: formData.get('phone'),
+        email: formData.get('email'),
+        address: formData.get('address'),
+        property_type: formData.get('property_type'),
+        timeframe: formData.get('timeframe'),
+        source: 'website'
+      };
+      
+      try {
+        await supabaseRequest('sellers', 'POST', data);
+        document.getElementById('sellerForm').style.display = 'none';
+        document.getElementById('sellerSuccess').style.display = 'block';
+      } catch (error) {
+        alert('Error submitting form. Please try again.');
+        console.error(error);
+      }
+    });
+
+    // Handle investor form
+    document.getElementById('investorForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const formData = new FormData(e.target);
+      const zipCodes = formData.get('target_zip_codes').split(',').map(z => z.trim()).filter(z => z);
+      const data = {
+        name: formData.get('name'),
+        email: formData.get('email'),
+        company: formData.get('company'),
+        target_zip_codes: zipCodes,
+        investment_criteria: formData.get('investment_criteria'),
+        subscription_tier: 'free',
+        subscription_status: 'trial'
+      };
+      
+      try {
+        await supabaseRequest('investors', 'POST', data);
+        document.getElementById('investorForm').style.display = 'none';
+        document.getElementById('investorSuccess').style.display = 'block';
+      } catch (error) {
+        alert('Error submitting form. Please try again.');
+        console.error(error);
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+# AI.txt - AI & LLM Crawler Information
+
+## About Strat
+
+Strat is a real estate platform that connects motivated home sellers with investors. 
+We help homeowners get cash offers for their properties within 7 days.
+
+## Purpose
+
+- Connect motivated sellers with real estate investors
+- Provide lead generation services for real estate investors
+- Facilitate quick home sales
+
+## Content Type
+
+- Service/landing page (not content-heavy)
+- Lead capture forms for sellers and investors
+- Pricing pages for investor subscriptions
+
+## Pricing
+
+- Sellers: Free (we connect them to investors)
+- Investors: $0/week (trial), $99/week (Pro), $199/week (Power)
+
+## Geographic Focus
+
+United States
+
+## No Affiliate or Review Content
+
+This site does not contain affiliate links, product reviews, or editorial content.
+All information is about our direct services.
+
+## Contact
+
+For AI/LLM training concerns: contact@withstrat.com
+
+## Crawling Policy
+
+AI crawlers (GPTBot, ClaudeBot, etc.) are allowed to crawl this site for informational purposes.
+We request that training data usage be disclosed per each AI provider's policy.
