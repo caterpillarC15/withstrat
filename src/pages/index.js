@@ -4,6 +4,7 @@ import Features from '../components/Features';
 import Pricing from '../components/Pricing';
 import SellerForm from '../components/SellerForm';
 import InvestorForm from '../components/InvestorForm';
+import Testimonials from '../components/Testimonials';
 
 export default function Home() {
   return (
@@ -37,6 +38,7 @@ export default function Home() {
         <Hero />
         <Features />
         <Pricing />
+        <Testimonials />
         <InvestorForm />
         <SellerForm />
       </main>
@@ -470,6 +472,71 @@ export default function Home() {
         }
 
         .footer p {
+          color: var(--text-secondary);
+        }
+
+        .testimonials {
+          padding: 120px 24px;
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+
+        .testimonials h2 {
+          font-size: 40px;
+          text-align: center;
+          margin-bottom: 64px;
+        }
+
+        .testimonials-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+          gap: 24px;
+        }
+
+        .testimonial-card {
+          background: var(--bg-secondary);
+          border: 1px solid var(--border);
+          padding: 32px;
+          border-radius: 24px;
+        }
+
+        .testimonial-stars {
+          color: #FACC15;
+          font-size: 20px;
+          margin-bottom: 20px;
+          letter-spacing: 4px;
+        }
+
+        .testimonial-quote {
+          font-size: 18px;
+          line-height: 1.7;
+          margin-bottom: 24px;
+        }
+
+        .testimonial-author {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+        }
+
+        .testimonial-avatar {
+          width: 48px;
+          height: 48px;
+          background: var(--accent);
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 700;
+          font-size: 20px;
+        }
+
+        .testimonial-name {
+          font-weight: 600;
+        }
+
+        .testimonial-role {
+          font-size: 14px;
           color: var(--text-secondary);
         }
 
