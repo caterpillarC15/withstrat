@@ -4,9 +4,17 @@ import { supabase } from '../lib/supabase';
 
 export default function SellerForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setError(null);
+    
+    if (!supabase) {
+      setError('Database not configured. Please try again later.');
+      return;
+    }
+
     const formData = new FormData(e.target);
     const data = {
       name: formData.get('name'),
@@ -19,10 +27,12 @@ export default function SellerForm() {
     };
     
     try {
-      const { error } = await supabase.from('sellers').insert([data]);
-      if (!error) setSubmitted(true);
+      const { error: err } = await supabase.from('sellers').insert([data]);
+      if (err) throw err;
+      setSubmitted(true);
     } catch (err) {
       console.error(err);
+      setError('Error submitting form. Please try again.');
     }
   };
 
@@ -77,6 +87,7 @@ export default function SellerForm() {
             <option value="90_days">Within 90 days</option>
           </select>
         </div>
+        {error && <div className="form-group" style={{color: 'red'}}>{error}</div>}
         <div className="form-group">
           <button type="submit">Get My Free Offer</button>
         </div>

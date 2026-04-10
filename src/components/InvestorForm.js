@@ -4,9 +4,17 @@ import { supabase } from '../lib/supabase';
 
 export default function InvestorForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setError(null);
+    
+    if (!supabase) {
+      setError('Database not configured. Please try again later.');
+      return;
+    }
+
     const formData = new FormData(e.target);
     const zipCodes = formData.get('target_zip_codes').split(',').map(z => z.trim()).filter(z => z);
     const data = {
@@ -20,10 +28,12 @@ export default function InvestorForm() {
     };
     
     try {
-      const { error } = await supabase.from('investors').insert([data]);
-      if (!error) setSubmitted(true);
+      const { error: err } = await supabase.from('investors').insert([data]);
+      if (err) throw err;
+      setSubmitted(true);
     } catch (err) {
       console.error(err);
+      setError('Error submitting form. Please try again.');
     }
   };
 
@@ -62,6 +72,7 @@ export default function InvestorForm() {
           <label>Investment Criteria</label>
           <textarea name="investment_criteria" rows="3" placeholder="What kind of deals are you looking for?"></textarea>
         </div>
+        {error && <div className="form-group" style={{color: 'red'}}>{error}</div>}
         <div className="form-group">
           <button type="submit">Sign Up for Free Lead</button>
         </div>
