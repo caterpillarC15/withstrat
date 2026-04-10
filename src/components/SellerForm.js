@@ -49,7 +49,7 @@ export default function SellerForm() {
 
   return (
     <section className="form-section" id="seller-form">
-      <h2>Get Your Free Offer</h2>
+      <h2>Homeowner? Get a Cash Offer</h2>
       <form className="form" onSubmit={handleSubmit}>
         <div className="form-group">
           <label>Your Name *</label>
@@ -87,7 +87,7 @@ export default function SellerForm() {
             <option value="90_days">Within 90 days</option>
           </select>
         </div>
-        {error && <div className="form-group" style={{color: 'red'}}>{error}</div>}
+        {error && <div className="form-group" style={{color: '#E11D48'}}>{error}</div>}
         <div className="form-group">
           <button type="submit">Get My Free Offer</button>
         </div>

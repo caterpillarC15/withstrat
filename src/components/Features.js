@@ -1,16 +1,28 @@
 export default function Features() {
   const features = [
-    { icon: '📋', title: '1. Submit Your Info', desc: 'Tell us about your property in under 2 minutes.' },
-    { icon: '📞', title: '2. We Call Within 24h', desc: 'Our team contacts you to learn more about your situation.' },
-    { icon: '💰', title: '3. Get a Cash Offer', desc: 'Connect with investors competing for your property.' }
+    {
+      icon: '⚡',
+      title: 'Leads in Your Inbox',
+      desc: 'Motivated sellers delivered weekly. No cold calling. No ads. Just deals.'
+    },
+    {
+      icon: '✓',
+      title: 'Pre-Qualified',
+      desc: 'Every lead is vetted for motivation, timeline, and budget. We do the filtering.'
+    },
+    {
+      icon: '📍',
+      title: 'Your Territory',
+      desc: 'Choose the zip codes you invest in. We only send leads in your market.'
+    }
   ];
 
   return (
-    <section className="features">
-      <h2>How It Works</h2>
+    <section className="features" id="how-it-works">
+      <h2>How Strat Works</h2>
       <div className="features-grid">
         {features.map((f, i) => (
-          <div key={i} className="feature">
+          <div key={i} className="feature-card">
             <div className="feature-icon">{f.icon}</div>
             <h3>{f.title}</h3>
             <p>{f.desc}</p>

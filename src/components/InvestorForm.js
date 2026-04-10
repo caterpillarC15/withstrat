@@ -41,8 +41,8 @@ export default function InvestorForm() {
     return (
       <section className="form-section" id="investor-form">
         <div className="success">
-          <h3>✓ Welcome!</h3>
-          <p>Your free lead is being prepared. We'll email you shortly!</p>
+          <h3>✓ Welcome to Strat!</h3>
+          <p>Your free lead is on its way. Check your inbox.</p>
         </div>
       </section>
     );
@@ -50,7 +50,7 @@ export default function InvestorForm() {
 
   return (
     <section className="form-section" id="investor-form">
-      <h2>Investor Sign Up</h2>
+      <h2>Get Started</h2>
       <form className="form" onSubmit={handleSubmit}>
         <div className="form-group">
           <label>Your Name *</label>
@@ -72,9 +72,9 @@ export default function InvestorForm() {
           <label>Investment Criteria</label>
           <textarea name="investment_criteria" rows="3" placeholder="What kind of deals are you looking for?"></textarea>
         </div>
-        {error && <div className="form-group" style={{color: 'red'}}>{error}</div>}
+        {error && <div className="form-group" style={{color: '#E11D48'}}>{error}</div>}
         <div className="form-group">
-          <button type="submit">Sign Up for Free Lead</button>
+          <button type="submit">Get My Free Lead</button>
         </div>
       </form>
     </section>
